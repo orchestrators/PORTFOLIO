@@ -17,6 +17,11 @@ body { background: var(--paper); color: var(--ink); font-family: var(--body); ma
 a { color: inherit; }
 a:focus-visible, button:focus-visible { outline: 3px solid #13766a; outline-offset: 4px; }
 img { display: block; max-width: 100%; }
+/* Decorative SVGs replace font-dependent Unicode symbols, avoiding emoji fallback in Safari. */
+.icon-svg { width: 1em; height: 1em; display: inline-block; flex: 0 0 auto; vertical-align: -0.12em; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.icon-svg--star { stroke-width: 2.3; }
+.icon-svg--expertise { stroke-width: 1.4; }
+
 h1, h2, h3, p { margin-top: 0; }
 button { font: inherit; }
 ::selection { background: var(--accent); color: var(--ink); }
